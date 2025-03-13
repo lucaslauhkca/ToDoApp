@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  padding-top: 60px; /* Offset for fixed navbar */
+
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.categories {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 15px;
+}
+
+.category {
+  background: white;
+  padding: 15px;
+  min-width: 250px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tasks {
+  margin-top: 10px;
+}
+
+.task {
+  background: #ddd;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.dashboard {
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.categories-wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
+}
+
+.category-card {
+  min-width: 250px;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card-body {
+  max-height: calc(100vh - 250px);
+  height: 100%;
+  overflow-y: auto;
+}
+
+.add-category-card {
+  min-width: 250px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  background: #e9ecef;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .categories {
+    flex-direction: column;
+  }
+  .category {
+    width: 100%;
+  }
+}
